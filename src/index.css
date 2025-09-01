@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure form fields respect dark mode */
+@layer base {
+  input, textarea {
+    @apply text-gray-900 dark:text-white bg-white dark:bg-gray-900;
+  }
+}
